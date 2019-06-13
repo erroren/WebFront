@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div></div>
+		<script type="text/javascript">
+			$("div").css({"width":"50px","height":"50px","backgroundColor":"red"});
+// 			$("*").on("mousemove",function(e){
+// 				console.log("鼠标移动");
+// 				$("div").each(function(){
+// 					this.style.position="absolute";
+// 					this.style.left=e.clientX+"px";
+// 					this.style.top=e.clientY+"px";
+// 				})
+// 			})
+			$("*").mousemove(function(e){
+				$("div").each(function(){
+					this.style.position="absolute";
+					this.style.left=e.clientX+"px";
+					this.style.top=e.clientY+"px";
+				})
+			})
+		</script>
+	</body>
+</html>

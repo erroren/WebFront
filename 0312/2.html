@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<p>当前点击<span id="span">0</span>次</p>
+		<button type="button">开始计数</button>
+		<button type="button">停止计数</button>
+		<script type="text/javascript">
+			
+			console.log(window.onclick)
+			let bg=document.getElementsByTagName("button");
+			let count=document.getElementById("span");
+			bg[0].onclick= function(e){
+				e.stopPropagation();
+				window.onclick=function(){
+						console.log(count.innerText,typeof(count.innerText));
+						count.innerText=String(parseInt(count.innerText)+1); 
+				}
+			}
+			bg[1].onclick=function(){
+				window.onclick=null;
+			}
+		</script>
+	</body>
+</html>

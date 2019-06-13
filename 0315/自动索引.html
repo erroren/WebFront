@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../0313/js/lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<input type="text">
+		<ul></ul>
+		<script type="text/javascript">
+			$("input").keyup(function(){
+				$.ajax({
+					url:"https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?&json=1&p=3&sid=1454_25810_21088_28557_28607_28584_28603_20718&req=2&csor=1&cb=?",
+					type:"GET",
+					data:{"wd":$(this).val()},
+					dataType:"jsonp",
+					success:function(data){
+						$("ul").empty();
+						for(let i=0;i<data.s.length;i++){
+							$("ul").append("<li>"+data.s[i]+"</li>")
+						console.log(data.s);
+						}
+					}
+				})
+			});
+		</script>
+	</body>
+</html>

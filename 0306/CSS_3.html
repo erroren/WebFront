@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 1.[属性名] */
+			[class]{
+				color: #A349A4;
+			}
+			/* 2.[属性名="属性值"] */
+			[class="class1"]{
+				font-size: 20px;
+			}
+			/* 3.[属性名^="value"] value为开头的部分*/
+			[class^="caa"]{
+				background-color: #0000FF;
+			}
+			/* 4.[属性名$="value"] value为结尾部分 */
+			[class$="4"]{
+				border: 1px solid red;
+			}
+			/* 5.[属性名~="属性值"] */
+			[class~="id5"]{
+				font-size: 30px;
+			}
+			/* 6.[属性名*="value"] value为属性值的一部分 */
+			[class*="class"]{
+				list-style-type: square;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li class="class1">item1</li>
+			<li class="class2">item2</li>
+			<li class="caass3">item3</li>
+			<li class="class4">item4</li>
+			<li class="class5 id5">item5</li>
+		</ul>
+	</body>
+</html>

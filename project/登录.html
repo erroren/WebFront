@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录界面</title>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/nec.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background-color: #f9f9f9;
+			}
+			#login_content{
+				width: 1100px;
+				height: auto;
+				margin: 0 auto;
+			}
+			#login_content1{
+				height: 500px;
+				margin: 50px auto;
+			}
+			#login_list{
+				float: right;
+				/* margin-right: 50px; */
+				width: 400px;
+				height: 500px;
+				background-color: #FFFFFF;
+			}
+			#login_list>h2{
+				height: 80px;
+				line-height: 80px;
+				font-weight: 400;
+				color: #666666;
+				text-align: center;
+				border-bottom: 1px solid #E5E5E5;
+				margin-bottom: 30px;
+			}
+			#login_list>ul{
+				list-style: none;
+				text-align: center;
+			}
+			#login_list>ul>li>input{
+				height: 40px;
+				width: 250px;
+				margin-bottom: 10px;
+				border: 1px solid #A9A9A9;
+			}
+			#login_list>ul>li:nth-child(3)>input{
+				width: 150px;
+				float: left;
+				margin-left: 74px;
+			}
+			#login_list>ul>li:nth-child(4){
+				height: 60px;
+			}
+			#login_list>ul>li:nth-child(4)>a{
+				margin-top: 20px;
+				margin-left: 74px;
+				width: 252px;
+				height: 40px;
+				display: block;
+				line-height: 40px;
+				background-color: #F75C5C;
+				text-decoration: none;
+				color: #FFFFFF;
+			}
+			#login_list>ul>li:nth-child(5)>a{
+				font-size: 14px;
+				color: #999999;
+				text-decoration: none;
+			}
+			#login_list>ul>li:nth-child(5)>a>b{
+				color: #F75C5C;
+			}
+			#line{
+				margin-left: 74px;
+				margin-top: 20px;
+				margin-bottom: 30px;
+				width: 250px;
+				height: 10px;
+				border-bottom: 1px solid #7F7F7F;
+			}
+			#line>p{
+				color: #999999;
+				width: 50px;
+				text-align: center;
+				margin: 0 auto;
+				background-color: #FFFFFF;	
+			}
+			#login_list>ul>li:last-child>a{
+				margin-left: 74px;
+				width: 250px;
+				height: 40px;
+				display: block;
+				line-height: 40px;
+				border:2px solid #F75C5C;
+				text-decoration: none;
+				color: #F75C5C;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div id="header1">
+				<div id="hleft">
+					<ul>
+						<li class="one">
+							<a href="#"><img src="image/sl_01.png" alt=""></a>
+							<a href="#">客服热线 400-888-8888</a>
+						</li>
+						<li><a href="#">帮助中心</a></li>
+						<li><a href="#">积分商城</a></li>
+					</ul>
+				</div>
+				<div id="hright">
+					<a href="#">登录</a>
+					<a href="#">注册</a>
+				</div>
+			</div>
+		</div>
+		<div id="nec">
+			<div id="nec_img">
+				<img src="image/sl_03.png" alt="">
+				<div id="nec_list">
+					<ul>
+						<li><a href="#">首页</a></li>
+						<li><a href="#">我要投资</a></li>
+						<li><a href="#">我要借款</a></li>
+						<li><a href="#">新手指引</a></li>
+						<li><a href="#">问答专区</a></li>
+						<li><a href="#">关于我们</a></li>
+						<li><a href="#">我的账户</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="login_content">
+			<div id="login_content1">
+				<img src="image/login/dl_01.png" alt="">
+				<div id="login_list">
+					<h2>登录</h2>
+					<ul>
+						<li>
+							<input type="text" placeholder="用户名/手机号">
+						</li>
+						<li>
+							<input type="password" placeholder="密码">
+						</li>
+						<li>
+							<input type="text" placeholder="验证码">
+							<img src="image/dl_01.png" style="width: 100px; height: 42px; margin-left: -75px;" alt="">
+						</li>
+						<li>
+							<a href="#">立即登录</a>
+						</li>
+						<li>
+							<a href="#">忘记密码？<b>点击找回</b></a>
+						</li>
+						<li>
+							<div id="line">
+								<p>或</p>
+							</div>
+						</li>
+						<li><a href="#">注册账号</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="footer_top">
+				<div id="footer_content">
+					<div id="content1">
+						<p>
+							<img src="image/rh-di.png" alt="">
+							虹口区四平路421弄3号3幢B座2-3楼
+						</p>
+						<p>
+							<img src="image/rh-ico.png" alt="">
+							咨询电话：400-888-6666
+						</p>
+						<p>
+							<img src="image/duanx.png" alt="">
+							qijubao@service.com
+						</p>
+					</div>
+					<div id="content2">
+						<img src="image/sl_05.png" alt="">
+						<ul>
+							<li class="l1"></li>
+							<li class="l2"></li>
+							<li class="l3"></li>
+						</ul>
+					</div>
+					<div id="content3">
+						<dl>
+							<dt>投资理财</dt>
+							<dd><a href="#">定存宝</a></dd>
+							<dd><a href="#">投资项目</a></dd>
+							<dd><a href="#">债权转让</a></dd>
+						</dl>
+						<dl>
+							<dt>关于我们</dt>
+							<dd><a href="#">公司简介</a></dd>
+							<dd><a href="#">管理团队</a></dd>
+							<dd><a href="#">联系我们</a></dd>
+						</dl>
+						<dl>
+							<dt>帮助中心</dt>
+							<dd><a href="#">常见问题</a></dd>
+							<dd><a href="#">隐私保护</a></dd>
+							<dd><a href="#">使用条款</a></dd>
+						</dl>
+					</div>
+				</div>
+				<div id="footer_list1">
+					<ul>
+						<li>友情链接:</li>
+						<li><a href="#">英科信息</a></li>
+						<li><a href="#">网贷中国</a></li>
+						<li><a href="#">网贷之家</a></li>
+						<li><a href="#">英科信息</a></li>
+						<li><a href="#">网贷中国</a></li>
+						<li><a href="#">网贷之家</a></li>
+						<li><a href="#">英科信息</a></li>
+						<li><a href="#">网贷中国</a></li>
+						<li><a href="#">网贷之家</a></li>
+						<li><a href="#">英科信息</a></li>
+						<li><a href="#">网贷中国</a></li>
+						<li><a href="#">网贷之家</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="footer_bottom">
+				<div id="footer_bottom_l">
+					<ul>
+						<li><img src="image/sl_29.png" ></li>
+						<li><img src="image/sl_30.png" ></li>
+						<li><img src="image/sl_31.png" ></li>
+						<li><img src="image/sl_32.png" ></li>
+					</ul>
+				</div>
+				<div id="footer_bottom_r">
+					<p>上海主林信息服务有限公司 版权所有</p>
+					<p>沪ICP备15044200号</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

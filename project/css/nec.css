@@ -1,0 +1,40 @@
+#nec{
+	width: 100%;
+	height: 100px;
+	background-color: #fff;
+	border-bottom: 1px solid #e5e5e5;
+	display: block;
+}
+div#nec>div#nec_img{
+	display: block;
+	margin: 0 auto;
+	width: 1300px;
+	/* height: 100px; */
+}
+div#nec>div#nec_img img{
+	margin-top: 20px;
+}
+div#nec_list{
+	font-family: "微软雅黑";
+	font-size: 18px;
+	font-weight: 500;
+	margin-right: 100px;
+	float: right;
+}
+div#nec_list>ul{
+	list-style: none;
+}
+div#nec_list>ul>li{
+	float: left;
+	margin-left: 60px;
+	line-height: 100px;
+}
+div#nec_list>ul>li>a{
+	color: #666666;
+	text-decoration: none;
+}
+div#nec_list>ul>li>a:hover{
+	color: #E7141A;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #E7141A;
+}

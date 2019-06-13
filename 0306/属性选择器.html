@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 属性名 */
+			[class]{
+				color: #880015;
+			}
+			/* 属性名=属性值 */
+			[class="item1"]{
+				border: 1px solid red;
+			}
+			/* 属性名~=属性值 */
+			[class~="demo3"]{
+				background-color: #FFC90E;
+			}
+			/* 属性名*=属性值 */
+			[class*="4"]{
+				font-size: 20px;
+			}
+			/* 属性名^=属性值 */
+			[title^="ti"]{
+				background-color: #7F7F7F;
+			}
+			/* 属性名$=属性值 */
+			[title$="3"]{
+				border: 1px solid #B5E61D;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li class="item1">li</li>
+			<li class="item2">li</li>
+			<li class="item3 demo3">li</li>
+			<li class="item4">li</li>
+			<li class="item5">li</li>
+			<li class="item6">li</li>
+			<li title="title1">title</li>
+			<li title="title2">title</li>
+			<li title="title3">title</li>
+			<li title="title4">title</li>
+			<li title="title5">title</li>
+		</ul>
+	</body>
+</html>

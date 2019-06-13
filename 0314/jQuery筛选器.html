@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../0313/js/lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("li").first().css("color","red");
+				$("li").last().css("color","red");
+				$("li").eq(2).css("color","red");
+				$("li").filter(".a1").css("color","red");
+				$("li").not(".a1").css("background","green");
+				$("ul").children().css("color","blue");
+				$("ul").children(".a1").css("font-size","50px");
+				// $("ul").children(".a1").css("color","red");
+				$(".a").find(".a1").children().css("color","red");
+				// $(".item1").parent().css("color","red");
+				// $(".item1").parents().css("color","red");
+				// $(".item1").parentsUntil("#i1").css("color","red");
+				// $(".item1").next().css("color","red");
+				// $(".item1").nextAll().css("color","red");
+				// $(".item1").nextUntil(".item4").css("color","red");
+				// $(".item4").prev().css("color","red");
+				// $(".item4").prevAll().css("color","red");
+				// $(".item4").prevUntil(".item1").css("color","red");
+				$(".item4").siblings().css("color","red");
+			})
+		</script>
+	</head>
+	<body>
+		<ul class="a">
+			<li>item1</li>
+			<li class="a1">item2</li>
+			<li>item3
+				<!-- <p class="a1">bbb</p> -->
+				<ul class="a1">
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+				</ul>
+			</li>
+			<li>item4</li>
+			<li>item5</li>
+		</ul>
+		<div>
+			<p>aaa</p>
+			<p>bb</p>
+		</div>
+		<div  id="i1"> 
+			<p>aaa1</p>
+			<p>bb1</p>
+		</div>
+		<div>
+			<p class="item1">p1</p>
+			<p class="item2">p2</p>
+			<p class="item3">p3</p>
+			<p class="item4">p4</p>
+			<p class="item5">p5</p>
+			<p class="item6">p6</p>
+			<p class="item7">p7</p>
+			<p class="item8">p8</p>
+			<p class="item9">p9</p>
+			<p class="item10">p10</p>
+		</div>	
+	</body>
+</html>

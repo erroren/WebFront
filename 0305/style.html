@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 外部样式表 -->
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<!-- 内部样式表 -->
+		<style type="text/css">
+			p{
+				font-size: large;
+				font-family: "宋体";
+			}
+			p>span{
+				color: #B5E61D;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 内联样式 -->
+		<p style="font-size: large; font-family: '楷体';"><span style="color: #8A2BE2;">奇酷</span>学院<p>
+		<!-- <p><span>奇酷</span>学院</p> -->
+		<h3>优先级关系</h3>
+		<p>1.当注释掉内联样式时，文本效果根据内部样式表和外部样式表的顺序决定，下面的覆盖上面</p>
+		<p>2.当注释掉外部样式表或者内部样式表时，文本效果是内联样式</p>
+		<p><b>内联样式优先级最高，其次内联样式表>外联样式表(前提是内联样式表在外联样式表之后)</b></p>
+	</body>
+</html>

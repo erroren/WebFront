@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<p>aaaaa</p>
+		<p>aaaa</p>
+		<p>afaf</p>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				console.log("加载完毕")
+			})
+			$("p").css({"color":"red","font-size":"60px"});
+// 			$("p").each(function(){
+// 				$(this).css("background","green");
+// 			})
+			$("p").each(function(){
+				this.style.backgroundColor="yellow";
+			})
+		</script>
+	</body>
+</html>

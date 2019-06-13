@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button type="button" onclick="asyncRequest()">异步请求</button>
+		<div id="info"></div>
+		<script type="text/javascript">
+			function asyncRequest(){
+				console.log("异步请求");
+				var xmlHttp;
+				xmlHttp=new XMLHttpRequest();
+				xmlHttp.onreadystatechange=function(){
+					document.getElementById("info").innerText=xmlHttp.responseText;
+					console.log(xmlHttp.readyState,xmlHttp.status,xmlHttp.responseText);
+				}
+				xmlHttp.open("GET","http://127.0.0.1:8848/WebFront/0315/get%E8%AF%B7%E6%B1%82.html",true);
+				xmlHttp.send();
+			}
+			function syncRequest(){
+				console.log("同步请求");
+			}
+		</script>
+	</body>
+</html>

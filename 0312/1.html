@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				margin: 0 auto;
+			}
+			img{
+				width: 200px;
+				height: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<img src="img/b.png" alt="">
+		</div>
+		<script type="text/javascript">
+			let d=document.getElementsByTagName("div")[0];
+			var x,y;
+			d.firstElementChild.onclick= function(){
+				if(parseInt(getComputedStyle(d.firstElementChild).width)<=100){
+					x=d.firstElementChild.width+20;
+					y=d.firstElementChild.height+20;
+					d.firstElementChild.style.width=String(x+"px");
+					d.firstElementChild.style.height=String(y+"px");
+				}else{
+					x=d.firstElementChild.width-20;
+					y=d.firstElementChild.height-20;
+					d.firstElementChild.style.width=String(x+"px");
+					d.firstElementChild.style.height=String(y+"px");
+				}
+			}
+		</script>
+	</body>
+</html>

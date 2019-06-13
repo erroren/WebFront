@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 4种动态伪类 */
+			/* 初始化颜色 */
+			a:link{
+				color: #000000;
+			}
+			/* 浏览过的网站 */
+			a:visited{
+				color: #1E90FF;
+			}
+			/* 鼠标移动到链接 */
+			a:hover{
+				color: #B5E61D;
+			}
+			/* 鼠标点击后 */
+			a:active{
+				color: #880015;
+			}
+			/* 3种状态伪类 */
+			/* checked */
+			input[type]:checked{
+				width: 30px;
+				height: 30px;
+			}
+			/* disabled */
+			input[type="text"]:disabled{
+				background-color: #8A2BE2;
+			}
+			/* enabled */
+			input[type="text"]:enabled{
+				border: 1px dashed #0000FF;
+			}
+			/* 12种顺序相关伪类 */
+			/* first-child */
+			span:first-child{
+				color: #B5E61D;
+			}
+			/* 每个父标签的第一个子标签且为span标签 */
+			/* span1,span2变色 */
+			/* last-child */
+			span:last-child{
+				color: #880015;
+			}
+			/* 每个父标签的最后一个子标签且为span标签 */
+			/* span2,span3变色 */
+			/* nth-child(n) */
+			p:nth-child(3){
+				background-color: #7F7F7F;
+			}
+			/* 每个父标签的第三个子标签且此标签为p标签 */
+			/* p3添加背景 */
+			/* nth-last-child */
+			p:nth-last-child(1){
+				font-size: 30px;
+			}
+			/* 每个父标签的倒数第一个标签且此标签为p标签 */
+			/* p3改变字体 */
+			/* only-child */
+			span:only-child{
+				font-size: 20px;
+			}
+			/* 每个父标签只有一个子标签且此标签为span标签 */
+			/* first-of-type */
+			p:first-of-type{
+				background-color: #1E90FF;
+			}
+			/* 每个父标签的第一个p子标签 */
+			/* last-of-type */
+			div:last-of-type{
+				border: 1px solid #99D9EA;
+			}
+			/* 每个父标签的倒数第一个div标签 */
+			/* nth-of-type */
+			p:nth-of-type(2){
+				color: #ED1C24;
+			}
+			/* 每个父标签的第2个p标签 */
+			/* nth-last-of-type */
+			span:nth-last-of-type(2){
+				background-color: #000000;
+			}
+			/* 每个父标签的倒数第2个span子标签 */
+			/* only-of-type */
+			h3:only-of-type{
+				color: #FFC90E;
+			}
+			/* 每个父标签只有一个h3标签的子标签 */
+			/* :not */
+			li:not([class="class2"]){
+				border: 1px dashed #8A2BE2;
+			}
+			/* li标签中类不等于class2的其他li */
+			/* empty */
+			li:empty{
+				background-color: #99D9EA;
+			}
+			/* 没有子标签且没有内容的标签 */
+		</style>
+	</head>
+	<body>
+		<a href="https://fanyi.baidu.com">伪类选择器</a>
+		<form action="">
+			选中后图标变大<input type="radio" name="gender"> 
+			<input type="radio" name="gender"><br>
+			<input type="text" disabled   value="禁用"><br>
+			<input type="text" value="默认enabled">
+		</form>
+		<div>
+			<span>span1</span>
+			<div>
+				<p>p1
+					<span>span2</span>
+				</p>
+				<span>span4</span>
+				<h3>hhhhhhhHHHHHHHHHHHHHHHHH</h3>
+				<p>p3</p>
+			</div>
+			<span>span3</span>
+		</div>
+		<ul>
+			<li class="class1">li1</li>
+			<li class="class2">li2</li>
+			<li class="class3">li3</li>
+			<li class="class4">li4</li>
+			<li class="class5"></li>
+		</ul>
+	</body>
+</html>

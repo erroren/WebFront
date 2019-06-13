@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#top{
+				width: 1100px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				margin: 0 auto;
+			}
+			#block{
+				width: 40px;
+				height: 50px;
+				background-color: #008000;
+				position: fixed;
+				right: 50px;
+				bottom: 50px;
+				display: none;
+			}
+		</style>
+	</head>
+	<body style="height: 3000px;">
+		<h1 id="top">顶部</h1>
+		<div id="block">
+			<a href="#top">回到顶部</a>
+		</div>
+		<script type="text/javascript">
+			let div=document.getElementsByTagName("div")[0];
+			window.onscroll=function(){
+				if(scrollY>1000){
+					div.style.display="block";
+				}else{
+					div.style.display="none";
+				}
+			}
+		</script>
+	</body>
+</html>

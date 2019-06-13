@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			 .ui-autocomplete {
+				max-height: 100px;
+				overflow-y: auto;
+				overflow-x: hidden;
+			  }
+			  * html .ui-autocomplete {
+				height: 100px;
+			  }
+		</style>
+		<link rel="stylesheet" type="text/css" href="js/JQuery/jquery-ui.css"/>
+		<script src="js/JQuery/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/JQuery/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				  var availableTags = [
+				  "ActionScript",
+				  "AppleScript",
+				  "Asp",
+				  "BASIC",
+				  "C",
+				  "C++",
+				  "Clojure",
+				  "COBOL",
+				  "ColdFusion",
+				  "Erlang",
+				  "Fortran",
+				  "Groovy",
+				  "Haskell",
+				  "Java",
+				  "JavaScript",
+				  "Lisp",
+				  "Perl",
+				  "PHP",
+				  "Python",
+				  "Ruby",
+				  "Scala",
+				  "Scheme"
+				];
+				$( "#tags" ).autocomplete({
+				  source: availableTags
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<div class="ui-widget">
+		  <label for="tags">Tags: </label>
+		  <input id="tags">
+		</div>
+	</body>
+</html>

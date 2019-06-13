@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			ul{
+				list-style: none;
+				/* display: block; */
+			}
+		</style>
+		<script src="js/JQuery/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				let a1=true,a2=true;
+				$("span").first().click(function(){
+					if(a1){
+						$("ul").first().hide();
+						a1=false;
+					}else{
+						$("ul").first().show();
+						a1=true;
+					}
+				
+				})
+				$("span").last().click(function(){
+					if(a2){
+						$("ul").last().hide();
+						a2=false;
+					}else{
+						$("ul").last().show();
+						a2=true;
+					}
+				
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<span>绝地求生</span><br>
+		<ul>
+			<li>M4A1</li>
+			<li>AKM</li>
+			<li>AWM</li>
+		</ul>
+		<span>英雄联盟</span><br>
+		<ul>
+			<li>瑞文</li>
+			<li>艾克</li>
+			<li>艾希</li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			let f1 =function(){
+				document.write("匿名函数")
+			}
+			f1();
+			
+			let dom={};
+			dom.value=function(){
+				document.write("第二种匿名函数")
+			}
+			dom.value()
+			
+			window.onclick=function(){
+				document.write("第三种匿名函数")
+			}
+			window.onclick();
+		</script>
+	</body>
+</html>

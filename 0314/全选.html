@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../0313/js/lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#tx1").on("click",function(){
+					console.log($("#tx1").prop("checked"))
+					if($("#tx1").prop("checked")){
+						$("#tx1").next().text("反选");
+						$("body").find("input").prop("checked",true);
+					}else{
+						$("#tx1").next().text("全选");
+						$("body").find("input").prop("checked",false);
+					}
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<p><input id="tx1" type="checkbox"><span>全选</span></p>
+		<input type="checkbox">11 <br>
+		<input type="checkbox">22 <br>
+		<input type="checkbox">33 <br>
+		<input type="checkbox">44 <br>
+		<input type="checkbox">55 <br>
+		<input type="checkbox">66 <br>
+		<input type="checkbox">77 <br>
+		<input type="checkbox">88 <br>
+		<input type="checkbox">99
+	</body>
+</html>

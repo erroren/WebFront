@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.ui-menu { width: 150px; }
+		</style>
+		<link rel="stylesheet" type="text/css" href="js/JQuery/jquery-ui.css"/>
+		<script src="js/JQuery/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/JQuery/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$( function() {
+				$( "#menu" ).menu();
+			  } );
+		</script>
+	</head>
+	<body>
+		<ul id="menu">
+		  <li>
+			<div><span class="ui-icon ui-icon-disk"></span>Save</div>
+		  </li>
+		  <li>
+			<div><span class="ui-icon ui-icon-zoomin"></span>Zoom In</div>
+		  </li>
+		  <li>
+			<div><span class="ui-icon ui-icon-zoomout"></span>Zoom Out</div>
+		  </li>
+		  <li class="ui-state-disabled">
+			<div><span class="ui-icon ui-icon-print"></span>Print...</div>
+		  </li>
+		  <li>
+			<div>Playback</div>
+			<ul>
+			  <li>
+				<div><span class="ui-icon ui-icon-seek-start"></span>Prev</div>
+			  </li>
+			  <li>
+				<div><span class="ui-icon ui-icon-stop"></span>Stop</div>
+			  </li>
+			  <li>
+				<div><span class="ui-icon ui-icon-play"></span>Play</div>
+			  </li>
+			  <li>
+				<div><span class="ui-icon ui-icon-seek-end"></span>Next</div>
+			  </li>
+			</ul>
+		  </li>
+		  <li>
+			<div>Learn more about this menu</div>
+		  </li>
+		</ul>
+	</body>
+</html>

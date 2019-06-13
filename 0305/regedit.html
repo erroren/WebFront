@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="http://127.0.0.1:8888/" method="post">
+			用户名:<input type="text" required autocomplete="off"><br>
+			密码: <input type="password" required><br>
+			性别: <input type="radio" name="gender">男
+				 <input type="radio" name="gender" checked >女<br>
+			手机号: <input type="number"><br>
+			电子邮箱: <input type="email" required><br>
+			地址: <select>
+					<option value ="BJ" selected >北京</option>
+					<option value ="SH">上海</option>
+					<option value ="ZZ">郑州</option>
+			</select><br>
+			个人爱好:<input type="checkbox" value="XY"/>吸烟
+			<input type="checkbox" value="HJ"/>喝酒
+			<input type="checkbox" value="TTF"/>烫头发<br>
+			上传头像: <input type="file"><br>
+			个人备注: <textarea cols="" rows="10"></textarea><br>
+			<!-- 注册时间: -->
+			<input type="hidden" value="注册时间">
+			<input type="submit" value="提交"/>
+			<input type="reset" value="重置"/>
+		</form>
+	</body>
+</html>

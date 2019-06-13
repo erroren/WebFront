@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button type="button" onclick="f1()">永久保存</button>
+		<button type="button" onclick="f2()">会话存储</button>
+		<script type="text/javascript">
+			function f1(){
+				let name=JSON.parse(localStorage.getItem("name"))
+				console.log(name);
+				let message={"age":"19","gender":"female"};
+				localStorage.setItem("name",JSON.stringify(message));	
+			}
+			function f2(){
+				sessionStorage.setItem("name","wc");
+			}
+		</script>
+	</body>
+</html>
